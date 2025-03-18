@@ -1,0 +1,459 @@
+﻿@font-face {
+    font-family: 'Lexend';
+    src: url('fonts/Lexend/Lexend-VariableFont_wght.ttf');
+}
+
+/* POR DEFECTO /////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body
+{
+    margin: 0;
+    font-family: Lexend;
+}
+
+div{
+    height: 100%;
+}
+
+img{
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+
+p {
+    font-size: 1.8vh;
+    font-weight: 300;
+    color: grey;
+}
+
+span{
+    font-weight: 500;
+}
+
+h1{
+    font-size: 2.6vh;
+    font-weight: 600;
+}
+
+#footer {
+    width: 100%;
+    min-height: 5vh;
+    background-color: lightgray;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3vw;
+    overflow: hidden;
+    color: black;
+    font-weight: 600;
+    padding-bottom: 2vh;
+}
+
+    #footer div {
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+    }
+
+    #footer a {
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+    }
+
+    #footer img {
+        max-width: 50%;
+        max-height: 50%;
+        object-fit: cover;
+    }
+
+    #footer p {
+        color: black;
+        font-weight: 600;
+    }
+
+/* TAGS */
+
+#header {
+    width: 100%;
+    height: 5vh;
+    background-color: lightgray;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3vw;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    overflow: hidden;
+    position: fixed;
+    z-index: 9999;
+}
+
+    #header div {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+        align-self: center;
+        gap: 1vw;
+    }
+
+    #header a {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+        align-self: center;
+        gap: 1vw;
+        text-decoration: none;
+    }
+
+    #header img {
+        max-width: 50%;
+        max-height: 50%;
+        object-fit: cover;
+    }
+
+    #header p {
+        color: black;
+        font-weight: 600;
+    }
+
+#begin{
+    margin-bottom: 5vh;
+}
+
+/* TEXTOS */
+
+.bigText{
+    font-size: 5vh;
+}
+
+.mediumText{
+    font-size: 2.5vh;
+}
+
+.normalText{
+    font-size: 1.8vh;
+}
+
+.smallText{
+    font-size: 1.2vh;
+}
+
+.bigWText{
+    font-weight: 800;
+}
+
+.semiBigWText{
+    font-weight: 600;
+}
+
+.normalWText{
+    font-weight: 400;
+}
+
+.smallWText{
+    font-weight: 200;
+}
+
+.shadowText {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.blackText{
+    color: black;
+}
+
+/* DIVS /////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* DIV QUE SE MUESTRA A LO LARGO DE TODA LA PANTALLA */
+.fullHDiv {
+    height: 100vh;
+}
+
+.halfHDiv{
+    height: 50vh;
+}
+
+.fullPercentDiv{
+    height: 100%;
+    width: 100%;
+}
+
+/* DIV QUE MUESTRA SU CONTENIDO EN HORIZONTAL */
+.hDiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* DIV QUE MUESTRA SU CONTENIDO EN VERTICAL */
+.vDiv {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/* DIV QUE ALINEA LAS COSAS AL CENTRO */
+.centerDiv {
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+/* DIV QUE DEJA MARGENES */
+.marginDiv{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/* Caja con decoraciones */
+.box {
+    padding: 2vh;
+    border-bottom: 1px solid #a1a1a166;
+    border-left: 1px solid #a1a1a166;
+    border-right: 1px solid #a1a1a166;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    transition: background 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+    .box:hover {
+        transform: translateY(-10px);
+        background-color: #a1a1a166;
+    }
+
+/* Caja de 30% de ancho maximo en PC. */
+.w30{
+    flex-basis: 28%;
+    max-width: 28%;
+}
+
+.w50{
+    flex-basis: 46%;
+    max-width: 46%;
+}
+
+.h50{
+    height: 50vh;
+}
+
+/* Caja que simula un cuadrado perfecto de 30x30 */
+.box30{
+    width: 30vw;
+    height: 30vh;
+}
+
+/* Espacio para los elementos de un flex */
+.gap1{
+    gap: 1vw;
+}
+
+/* Caja que no deja pasar nada fuera de ella. */
+.coverBox{
+    overflow: hidden;
+}
+
+/* Caja que cambia el color del texto y del fondo */
+.blackBox{
+    background-color: black;
+    color: white;
+    padding: 1vh;
+}
+
+
+/* MARGINS AND PADDINGS /////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.marginBottom{
+    margin-bottom: 10vh;
+}
+
+.smallMarginBottom{
+    margin-bottom: 5vh;
+}
+
+/* IMAGENES /////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.img100 {
+    max-width: 100% !important;
+    max-height: 100% !important;
+    object-fit: contain;
+}
+
+.img50 {
+    max-width: 50% !important;
+    max-height: 50% !important;
+    object-fit: contain;
+}
+
+.img25 {
+    max-width: 25% !important;
+    max-height: 25% !important;
+    object-fit: contain;
+}
+
+.coverImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+.coverImg:hover{
+    transform: scale(1.2);
+}
+
+/* CARRUSEL /////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation: fade 12s infinite;
+}
+
+    .slide img {
+        width: 100%;
+        height: auto;
+        z-index: -1;
+    }
+
+    .slide p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+
+    .slide:nth-child(1) {
+        animation-delay: 0s;
+    }
+
+    .slide:nth-child(2) {
+        animation-delay: 3s;
+    }
+
+    .slide:nth-child(3) {
+        animation-delay: 6s;
+    }
+
+    .slide:nth-child(4) {
+        animation-delay: 9s;
+    }
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* SPECIAL ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.notSmall{
+
+}
+
+.notBig{
+
+}
+
+/* RESPONSIVE ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+@media (max-width: 1000px){
+
+    .notSmall{
+        visibility: hidden;
+        opacity: 0;
+        width: 0;
+        height: 0;
+        margin: 0;
+    }
+
+    .marginDiv{
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+    
+    .slide img{
+        height: 100%;
+        width: 100%;
+    }
+
+    .w30,
+    .w50
+    {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    .h50{
+        height: 60vh;
+    }
+
+    .box30{
+        width: 90vw;
+        height: 90vw;
+    }
+}
+
+@media (min-width: 1000px)
+{
+    .notBig {
+        visibility: hidden;
+        opacity: 0;
+        width: 0;
+        height: 0;
+        margin: 0;
+    }
+}
