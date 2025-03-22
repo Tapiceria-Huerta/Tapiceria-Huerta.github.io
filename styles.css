@@ -40,48 +40,18 @@ h1{
     font-weight: 600;
 }
 
-#footer {
-    width: 100%;
-    min-height: 5vh;
-    background-color: lightgray;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 3vw;
-    overflow: hidden;
-    color: black;
-    font-weight: 600;
-    padding-bottom: 2vh;
+/* RECURSOS VARIABLES //////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.logo{
+    min-width: 10%;
+    height: 100%;
+    background-image: url("images/logo/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-    #footer div {
-        display: flex;
-        text-align: center;
-        justify-content: space-around;
-    }
-
-    #footer a {
-        display: flex;
-        text-align: center;
-        justify-content: space-around;
-        text-decoration: none;
-        color: black;
-        font-weight: 600;
-    }
-
-    #footer img {
-        max-width: 50%;
-        max-height: 50%;
-        object-fit: cover;
-    }
-
-    #footer p {
-        color: black;
-        font-weight: 600;
-    }
-
-/* TAGS */
+/* TAGS ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 #header {
     width: 100%;
@@ -138,7 +108,48 @@ h1{
     margin-bottom: 5vh;
 }
 
-/* TEXTOS */
+#footer {
+    width: 100%;
+    min-height: 5vh;
+    background-color: lightgray;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3vw;
+    overflow: hidden;
+    color: black;
+    font-weight: 600;
+    padding-bottom: 2vh;
+}
+
+    #footer div {
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+    }
+
+    #footer a {
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+    }
+
+    #footer img {
+        max-width: 50%;
+        max-height: 50%;
+        object-fit: cover;
+    }
+
+    #footer p {
+        color: black;
+        font-weight: 600;
+    }
+
+/* TEXTOS //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .bigText{
     font-size: 5vh;
@@ -180,7 +191,7 @@ h1{
     color: black;
 }
 
-/* DIVS /////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* DIVS ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 /* DIV QUE SE MUESTRA A LO LARGO DE TODA LA PANTALLA */
 .fullHDiv {
@@ -282,6 +293,18 @@ h1{
     height: 50vh;
 }
 
+.h70{
+    height: 70vh;
+}
+
+.w100Percent{
+    width: 100%;
+}
+
+.h80Percent{
+    height: 80%;
+}
+
 /* Caja que simula un cuadrado perfecto de 30x30 */
 .box30{
     width: 30vw;
@@ -315,6 +338,10 @@ h1{
 
 
 /* MARGINS AND PADDINGS /////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.marginTop{
+    margin-top: 10vh;
+}
 
 .marginBottom{
     margin-bottom: 10vh;
@@ -353,6 +380,12 @@ h1{
 
 .coverImg:hover{
     transform: scale(1.2);
+}
+
+.fullImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .roundedImg{
@@ -500,6 +533,10 @@ h1{
 
     .h50{
         height: 60vh;
+    }
+
+    .h70{
+        height: 80vh;
     }
 
     .box30{
