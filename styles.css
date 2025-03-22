@@ -43,12 +43,17 @@ h1{
 /* RECURSOS VARIABLES //////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .logo{
-    min-width: 10%;
+    min-width: 5%;
     height: 100%;
     background-image: url("images/logo/logo.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    transition: 0.2s ease-in-out;
+}
+
+.logo:hover{
+    filter: grayscale(100);
 }
 
 /* TAGS ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -487,6 +492,39 @@ h1{
     font-weight: 800;
 }
 
+/* ANIMATIONS ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.jiggle{
+    animation: jiggleAnimation 1s infinite;
+}
+
+@keyframes jiggleAnimation{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    10%{
+        transform: rotateZ(25deg);
+    }
+    20%{
+        transform: rotateZ(0deg);
+    }
+    30%{
+        transform: rotateZ(15deg);
+    }
+    40% {
+        transform: rotateZ(0deg);
+    }
+    50% {
+        transform: rotateZ(35deg);
+    }
+    60% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
 /* SPECIAL ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .notSmall{
@@ -500,6 +538,10 @@ h1{
 /* RESPONSIVE ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 @media (max-width: 1000px){
+
+    .logo{
+        min-width: 10%;
+    }
 
     .notSmall{
         visibility: hidden;
